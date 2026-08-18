@@ -1,0 +1,13 @@
+# dsh bundle layer: mount the dsh-minimax-image plugin.
+#
+# The plugin generates images via the MiniMax image_generation API and saves
+# them under a configurable output directory (default: workspace/generated).
+#
+# Config (highest wins):
+#   1. profile patch / plugin row config
+#   2. ~/.config/dsh-minimax-image/config.json
+#   3. MINIMAX_IMAGE_* environment variables
+#   4. built-in defaults
+- insert:
+    - id: minimax-image
+      name: dsh-minimax-image

@@ -1,0 +1,36 @@
+{
+  "name": "dsh-minimax-image",
+  "version": "0.1.0",
+  "description": "MiniMax 文生图插件：把一句话画面描述生成图片并保存到工作区，作为 `image-gen` 工具提供给模型调用。",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json",
+    "./cordis.patch.yml": "./cordis.patch.yml"
+  },
+  "files": [
+    "index.js",
+    "lib",
+    "cordis.patch.yml",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "dsh",
+    "image",
+    "generation",
+    "t2i",
+    "minimax"
+  ],
+  "license": "MIT",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
